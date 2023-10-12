@@ -1,3 +1,3 @@
 <template>
-  <div class="container text-danger">Helloss</div>
+  <Nav />
 </template>
