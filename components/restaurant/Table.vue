@@ -14,6 +14,7 @@ const restaurantsOrganized = {
     <div class="table-container">
       <div class="table-col">
         <RestaurantRow :is-header="true" />
+
         <RestaurantRow
           v-for="(restaurant, index) in restaurantsOrganized.first"
           :key="restaurant.id"

@@ -5,6 +5,7 @@ interface RowProps {
   name?: string;
   rank?: number;
 }
+
 const props = defineProps<RowProps>();
 </script>
 
@@ -20,7 +21,7 @@ const props = defineProps<RowProps>();
     :style="index % 2 === 0 ? { background: 'rgba(128,128,128,0.15)' } : null"
   >
     <h4 class="header rank">{{ props.rank }}</h4>
-    <nuxt-link :to="`/restaurant/${name}`" class="header link">
+    <nuxt-link :to="`/restaurants/${name}`" class="header link">
       {{ name }}
     </nuxt-link>
   </div>
