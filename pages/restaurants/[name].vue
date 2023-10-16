@@ -10,8 +10,8 @@ useMeta({
   title: restaurant ? name : "404 - Restaurant Not Found",
   meta: [
     {
-      name: "viewPort",
-      content: "width:device-width",
+      name: "viewport",
+      content: "width=device-width",
     },
   ],
 });
@@ -30,11 +30,11 @@ useMeta({
 
           <div class="stats-container">
             <h5>Revenue (in billions)</h5>
-            <p>{{ restaurant.revenue }}</p>
+            <p>${{ restaurant.revenue }}</p>
           </div>
 
           <div class="stats-container">
-            <h5>Number of stores</h5>
+            <h5>Number of Stores</h5>
             <p>{{ restaurant.numberOfStores }}</p>
           </div>
 
@@ -42,6 +42,7 @@ useMeta({
         </div>
       </div>
     </NuxtLayout>
+
     <div class="restaurant-not-found" v-else>
       <NuxtLayout name="error">
         <template #header>
